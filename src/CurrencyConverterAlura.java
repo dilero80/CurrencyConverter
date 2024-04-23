@@ -1,8 +1,11 @@
+import Requests.CurrencyRequest;
+
+import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.util.Scanner;
 
 public class CurrencyConverterAlura {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         boolean exit = false;
         do {
             Menu.displayPrincipalMenu();
@@ -29,12 +32,14 @@ public class CurrencyConverterAlura {
         }while (!exit);
     }
 
-    private static void CurrencySwitch() {
+    private static void CurrencySwitch() throws IOException {
         boolean exit = false;
+
         do {
 
             switch (selectOption().toUpperCase()){
                 case "1":
+
                     break;
                 case "2":
                     break;

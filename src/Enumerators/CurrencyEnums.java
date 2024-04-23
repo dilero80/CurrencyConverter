@@ -6,7 +6,8 @@ public enum CurrencyEnums {
 
     USD("USD", "United States Dollar"),
     COP("COP", "Colombian Peso"),
-    ARS("ARS", "Argentine Peso");
+    ARS("ARS", "Argentine Peso"),
+    BRL("BRL", "Brazilian Real");
 
     private final String currencyCode;
     private final String currencyName;
