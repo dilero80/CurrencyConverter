@@ -12,7 +12,7 @@ import java.net.URL;
 
 public class CurrencyRequest {
 
-    public String AskCurrencies(String principalCurrency) throws IOException {
+    public JsonObject AskCurrencies(String principalCurrency) throws IOException {
         // Setting URL
         String url_str = "https://v6.exchangerate-api.com/v6/6d2e7c8bcf51b8b8e9d0f265/latest/"+ principalCurrency;
         // Making Request
@@ -27,7 +27,7 @@ public class CurrencyRequest {
         JsonObject jsonobj = root.getAsJsonObject();
         System.out.println(jsonobj);
         // Accessing object
-        return jsonobj.getAsString();
+        return jsonobj.get("conversion_rates").getAsJsonObject();
     }
 
 }

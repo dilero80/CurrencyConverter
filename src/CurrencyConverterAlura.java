@@ -1,4 +1,6 @@
+import Entities.Currency;
 import Requests.CurrencyRequest;
+import Services.CurrencyService;
 
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
@@ -34,18 +36,27 @@ public class CurrencyConverterAlura {
 
     private static void CurrencySwitch() throws IOException {
         boolean exit = false;
-
+        CurrencyService cs = new CurrencyService();
+        Currency c = new Currency();
         do {
 
             switch (selectOption().toUpperCase()){
                 case "1":
-
+                    c  = cs.createCurrency("COP");
+                    System.out.println(c);
                     break;
                 case "2":
+                    c  = cs.createCurrency("USD");
+                    System.out.println(c);
+
                     break;
                 case "3":
+                    c  = cs.createCurrency("BRL");
+                    System.out.println(c);
                     break;
                 case "4":
+                    c  = cs.createCurrency("ARS");
+                    System.out.println(c);
                     break;
                 case "5":
                     break;

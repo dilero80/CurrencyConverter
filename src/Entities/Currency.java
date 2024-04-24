@@ -49,4 +49,14 @@ public class Currency {
     public void setBrl(Double brl) {
         this.brl = brl;
     }
+
+    @Override
+    public String toString() {
+        return "Currency{" +
+                "cop=" + cop +
+                ", usd=" + usd +
+                ", ars=" + ars +
+                ", brl=" + brl +
+                '}';
+    }
 }
