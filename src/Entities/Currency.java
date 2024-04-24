@@ -1,6 +1,5 @@
 package Entities;
 
-import Enumerators.CurrencyEnums;
 
 public class Currency {
         private Double cop;
@@ -52,11 +51,11 @@ public class Currency {
 
     @Override
     public String toString() {
-        return "Currency{" +
-                "cop=" + cop +
-                ", usd=" + usd +
-                ", ars=" + ars +
-                ", brl=" + brl +
-                '}';
+        return "([" +
+                "COP= " + cop +
+                "], [USD= " + usd +
+                "], [ARS= " + ars +
+                "], [BRL= " + brl +
+                "])";
     }
 }

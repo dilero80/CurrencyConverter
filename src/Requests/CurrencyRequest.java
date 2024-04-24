@@ -4,6 +4,7 @@ import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -23,9 +24,9 @@ public class CurrencyRequest {
 
         // Convert to JSON
         JsonParser jp = new JsonParser();
-        JsonElement root = jp.parse(new InputStreamReader((InputStream) request.getContent()));
+        InputStreamReader toExtract = new InputStreamReader((InputStream) request.getContent());
+        JsonElement root = jp.parse(toExtract);
         JsonObject jsonobj = root.getAsJsonObject();
-        System.out.println(jsonobj);
         // Accessing object
         return jsonobj.get("conversion_rates").getAsJsonObject();
     }
