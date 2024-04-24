@@ -18,7 +18,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/github_username/repo_name">
+  <a href="https://github.com/dilero80/CurrencyConverter">
     <img src="img/exchange-rate.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -72,8 +72,6 @@
 ## About The Project
 
 [![Product Name Screen Shot][product-screenshot]](https://github.com/dilero80/CurrencyConverter)
-[![Product Name Screen Shot2][product-screenshot2]](https://github.com/dilero80/CurrencyConverter)
-[![Product Name Screen Shot3][product-screenshot3]](https://github.com/dilero80/CurrencyConverter)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
@@ -128,7 +126,9 @@ Use JAVA 21 SDK
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+[![Product Name Screen Shot][product-screenshot]](https://github.com/dilero80/CurrencyConverter)
+[![Product Name Screen Shot2][product-screenshot2]](https://github.com/dilero80/CurrencyConverter)
+[![Product Name Screen Shot3][product-screenshot3]](https://github.com/dilero80/CurrencyConverter)
 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
