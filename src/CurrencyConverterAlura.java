@@ -106,32 +106,32 @@ public class CurrencyConverterAlura {
          double total;
          Scanner read = new Scanner(System.in, StandardCharsets.ISO_8859_1).useDelimiter("\n");
 
-         System.out.println("How much you want to convert from " + CurrencyEnums.valueOf(cur1) + " to " + CurrencyEnums.valueOf(cur2));
+         System.out.println(STR."How much you want to convert from \{CurrencyEnums.valueOf(cur1).getCurrencyName()} \{CurrencyEnums.valueOf(cur1)} to \{CurrencyEnums.valueOf(cur2).getCurrencyName()} \{CurrencyEnums.valueOf(cur2)}");
          howMuch = (read.nextDouble());
          total = howMuch * curValue;
          System.out.println(STR."You will need \{CurrencyEnums.valueOf(cur2).getCurrencyName()} \{CurrencyEnums.valueOf(cur2).getCurrencyCode()}  $ \{String.format("%,.2f", total)} for \{CurrencyEnums.valueOf(cur1).getCurrencyName()} \{CurrencyEnums.valueOf(cur1).getCurrencyCode()} $\{howMuch}");
      }
 
      public static double valueOfCurrency (String curName, Currency c){
-        double valuetoReturn = 0;
+        double valueReturn = 0;
         switch (curName){
             case "USD":
-                valuetoReturn = c.getUsd();
+                valueReturn = c.getUsd();
                 break;
             case "COP":
-                valuetoReturn = c.getCop();
+                valueReturn = c.getCop();
                 break;
             case "ARS":
-                valuetoReturn = c.getArs();
+                valueReturn = c.getArs();
                 break;
             case "BRL":
-                valuetoReturn = c.getBrl();
+                valueReturn = c.getBrl();
                 break;
             default:
                 break;
 
         }
-        return valuetoReturn;
+        return valueReturn;
      }
 }
 
